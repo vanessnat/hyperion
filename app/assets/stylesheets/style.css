@@ -82,3 +82,7 @@ h1, h3 {
 .card {
   width: 80%; /* rétrécissement de 20% */
 }
+.custom-margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
