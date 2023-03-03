@@ -10,27 +10,31 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <body style="background-color: #252424;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">HYPE</br>RION</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Planètes</a>
-        </li>
-      </ul>
+    <a class="navbar-brand" href="#">HYPE<br>RION</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+        <a class="nav-link" href="#">Planètes</a>
+      </div>
     </div>
-  </div>
 </nav>
-  <div class="p-5 text-center bg-light">
-    <h1 class="mb-3">HYPERION</h1>
-    <h4 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h4>
-    <a class="btn btn-primary" href="" role="button">Call to action</a>
-  </div>
+    <h1 class="mb-3">Visiter le cosmos</h1>
+    <h3 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h3>
+    <%= yield %>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -74,13 +78,11 @@
           <h5 class="card-title">Aquaterra</h5>
           <p class="card-text">Aquaterra est une planète extraordinaire dans notre galaxie. Elle est recouverte d'un océan mondial qui abrite une vie marine riche et complexe, y compris des formes de vie intelligentes. Bien que la colonisation humaine soit difficile en raison de l'environnement sous-marin, les scientifiques et les explorateurs continuent de s'intéresser à Aquaterra en raison de ses secrets sous-marins inexplorés. </p>
           <a href="#" class="btn btn-secondary">En savoir plus</a>
-        </div>
       </div>
     </div>
   </div>
 </div>
-<%= yield %>
-<footer class="text-center text-white" style="background-color: #212529;">
+<footer class="text-center text-white" style="background-color: #252424;">
   <div class="container-fluid p-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
