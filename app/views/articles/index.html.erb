@@ -4,10 +4,10 @@
   <% @articles.each do |article| %>
     <div class="col-md-4">
       <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1081127938688294912/natcat_planet_neptune_in_space_44099dc1-6350-4871-86c8-ff1842a498b6.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
+        <img src="<%= article.image %>" class="card-img-top img-fluid" alt="">
         <div class="card-body">
           <h5 class="card-title"><%= article.title %></h5>
-          <p class="card-text"><%= article.content %></p>
+          <p class="card-text"><%= article.chapo %></p>
           <%= link_to "En savoir plus", article, class: 'btn btn-secondary' %>
         </div>
       </div>
