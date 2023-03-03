@@ -7,37 +7,25 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <style>
+      body {
+        background-color: #161616;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #0E0E0E;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">HYPE<br>RION</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
-            <a class="nav-link" href="/planetes">Planètes</a>
-          </div>
-        </div>
-    </nav>
+    <div class="container text-center text-white">
+      <a class="navbar-brand" href="/">
+      <%= image_tag 'logo.svg'%>
+      </a>
+    </div>
     <div class="container">
       <%= yield %>
     </div>
     <footer class="text-center text-white" style="background-color: #0E0E0E;">
       <div class="container-fluid p-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Planètes</a></li>
+          <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Accueil</a></li>
         </ul>
         <p class="text-center text-muted text-white">© 2023 HYPERION Benazza, Twyffels</p>
       </div>

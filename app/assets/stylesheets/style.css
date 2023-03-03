@@ -1,92 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.navbar {
-  background-color: #fff;
-  /* Background color of the navigation bar */
-  border-bottom: 1px solid #ccc;
-  /* Border at the bottom of the navigation bar */
-  padding: 10px;
-  /* Interior spacing of the navigation bar */
-}
 
-.navbar-brand {
-  font-family: 'Inter';
-  color: #bb6767;
-  /* Color of the text of the navigation bar mark */
-  font-size: 1px;
-  /* Text size of the navigation bar marker */
-  font-weight: bold;
-  /* Font weight of the navigation bar mark */
-}
-
-.navbar-nav {
-  margin-left: auto;
-  /* Right alignment of navigation elements */
-}
-
-.nav-link {
-  font-family: 'Inter';
-  color: #f2f2f2;
-  font-size: 1px;
-  font-weight: bold;
-  padding: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-h1, h3 {
-  color: white;
-  text-align: center;
+h5 {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 200;
-  font-size: 1px;
-}
-.row {
-  margin-bottom: 20px;
-}
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 35px;
 
-.card {
-  border: 1px solid #bcbaba;
-  margin-bottom: 20px;
-}
-
-.card-img-top {
-  max-width: 20%;
-}
-
-.card-title {
-  font-family: 'Inter';
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-family: 'Inter';
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.btn-secondary {
-  font-family: 'Inter';
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
-
-.col-sm-6 {
-  width: 10%;
-  float: left;
-}
-
-.card {
-  width: 80%; /* rétrécissement de 20% */
-}
-.custom-margin {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-body {
-  background-color: black;
+  color: #FFFFFF;
 }
