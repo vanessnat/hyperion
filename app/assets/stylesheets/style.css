@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
+.centered-svg {
+  display: block; /* Affiche l'image en tant que bloc */
+  margin: auto; /* Centre l'image horizontalement */
+  max-width: 100%; /* Empêche l'image de déborder de son conteneur */
+  max-height: 100%; /* Empêche l'image de déborder de son conteneur */
+}
 
 h5 {
   font-family: 'Inter';
