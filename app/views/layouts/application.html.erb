@@ -14,9 +14,6 @@
   <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">HYPE</br>RION</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -29,7 +26,11 @@
     </div>
   </div>
 </nav>
-    <%= yield %>
+  <div class="p-5 text-center bg-light">
+    <h1 class="mb-3">HYPERION</h1>
+    <h4 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h4>
+    <a class="btn btn-primary" href="" role="button">Call to action</a>
+  </div>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -38,7 +39,7 @@
         <div class="card-body">
           <h5 class="card-title">Zephyrion</h5>
           <p class="card-text">Zephyrion est une planète fascinante et unique, située dans un système stellaire lointain. Sa dense atmosphère est principalement composée de gaz à effet de serre, créant des températures moyennes élevées et des tempêtes électriques fréquentes.</p>
-          <a href="#" class="btn btn-primary">En savoir plus</a>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
@@ -72,11 +73,21 @@
         <div class="card-body">
           <h5 class="card-title">Aquaterra</h5>
           <p class="card-text">Aquaterra est une planète extraordinaire dans notre galaxie. Elle est recouverte d'un océan mondial qui abrite une vie marine riche et complexe, y compris des formes de vie intelligentes. Bien que la colonisation humaine soit difficile en raison de l'environnement sous-marin, les scientifiques et les explorateurs continuent de s'intéresser à Aquaterra en raison de ses secrets sous-marins inexplorés. </p>
-          <a href="#" class="btn btn-second">En savoir plus</a>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<%= yield %>
+<footer class="text-center text-white" style="background-color: #212529;">
+  <div class="container-fluid p-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Planètes</a></li>
+    </ul>
+    <p class="text-center text-muted text-white">© 2023 HYPERION Benazza, Twyffels</p>
+  </div>
+</footer>
   </body>
 </html>
