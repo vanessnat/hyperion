@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <title>HYPERION</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "style", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body style="background-color: #252424;">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">HYPE<br>RION</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-        <a class="nav-link" href="#">Planètes</a>
-      </div>
-    </div>
-</nav>
-    <h1 class="mb-3">Visiter le cosmos</h1>
-    <h3 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h3>
-    <%= yield %>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <img src="https://cdn.discordapp.com/ephemeral-attachments/1008571165893197845/1080871954556391584/grid_0.webp" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
-        <div class="card-body">
-          <h5 class="card-title">Zephyrion</h5>
-          <p class="card-text">Zephyrion est une planète fascinante et unique, située dans un système stellaire lointain. Sa dense atmosphère est principalement composée de gaz à effet de serre, créant des températures moyennes élevées et des tempêtes électriques fréquentes.</p>
-          <a href="#" class="btn btn-secondary">En savoir plus</a>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HYPE<br>RION</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+            <a class="nav-link" href="/articles">Planètes</a>
+          </div>
         </div>
-      </div>
+    </nav>
+    <div class="container">
+      <%= yield %>
     </div>
-    <div class="col-md-6">
-      <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1080898086085341345/natcat_a_pink_realistic_planet_in_the_cosmos_61ac4b26-c981-4eea-a189-1bc4b69d9daf.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
-        <div class="card-body">
-          <h5 class="card-title">Néoterra</h5>
-          <p class="card-text">Néoterra est une planète fascinante et intrigante, située à environ 25 années-lumière de la Terre. Avec une atmosphère dense, une température moyenne de surface similaire à celle de la Terre, des continents, des océans et des montagnes, Néoterra semble être une planète idéale pour la vie.</p>
-          <a href="#" class="btn btn-secondary">En savoir plus</a>
-        </div>
+    <footer class="text-center text-white" style="background-color: #252424;">
+      <div class="container-fluid p-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Planètes</a></li>
+        </ul>
+        <p class="text-center text-muted text-white">© 2023 HYPERION Benazza, Twyffels</p>
       </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1081128947032535070/natcat_a_green_realistic_planet_in_space_1d8381b1-673b-4b4b-b590-475907472b59.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
-        <div class="card-body">
-          <h5 class="card-title">Veridium</h5>
-          <p class="card-text">Veridium est une planète unique dans notre galaxie. Bien que petite et inhospitalière en apparence, elle abrite une vie étonnamment variée et des ressources précieuses. Son instabilité géologique et son atmosphère rare font de la colonisation humaine un défi, mais les scientifiques et les explorateurs continuent de s'y intéresser en raison de sa biodiversité fascinante.</p>
-          <a href="#" class="btn btn-secondary">En savoir plus</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1081127938688294912/natcat_planet_neptune_in_space_44099dc1-6350-4871-86c8-ff1842a498b6.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
-        <div class="card-body">
-          <h5 class="card-title">Aquaterra</h5>
-          <p class="card-text">Aquaterra est une planète extraordinaire dans notre galaxie. Elle est recouverte d'un océan mondial qui abrite une vie marine riche et complexe, y compris des formes de vie intelligentes. Bien que la colonisation humaine soit difficile en raison de l'environnement sous-marin, les scientifiques et les explorateurs continuent de s'intéresser à Aquaterra en raison de ses secrets sous-marins inexplorés. </p>
-          <a href="#" class="btn btn-secondary">En savoir plus</a>
-      </div>
-    </div>
-  </div>
-</div>
-<footer class="text-center text-white" style="background-color: #252424;">
-  <div class="container-fluid p-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Planètes</a></li>
-    </ul>
-    <p class="text-center text-muted text-white">© 2023 HYPERION Benazza, Twyffels</p>
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
