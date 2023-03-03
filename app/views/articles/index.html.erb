@@ -1,17 +1,21 @@
-<h1 class="mb-3">Visiter le cosmos</h1>
-<h3 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h3>
-<div class="row">
-  <% @articles.each do |article| %>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="<%= article.image %>" class="card-img-top img-fluid" alt="">
-        <div class="card-body">
-          <h5 class="card-title"><%= article.title %></h5>
-          <p class="card-text"><%= article.chapo %></p>
-          <%= link_to "En savoir plus", article, class: 'btn btn-secondary' %>
+<div class="container">
+  <h1 class="mb-3">Visiter le cosmos</h1>
+  <h3 class="mb-3">Bienvenue sur mon blog dédié à l'imagination et la création de nouvelles planètes ! Ici, nous allons laisser libre cours à notre créativité pour imaginer des mondes uniques et fascinants. De la taille et de la couleur de leur étoile jusqu'à la composition de leur atmosphère, nous allons explorer les possibilités infinies de la création de planètes. Nous allons également discuter des caractéristiques qui pourraient rendre ces planètes propices à la vie et des défis que les explorateurs et les habitants devraient relever pour y survivre. Que vous soyez un écrivain de science-fiction, un fan d'univers fantastiques ou simplement un rêveur à la recherche d'inspiration, vous êtes au bon endroit pour explorer les frontières de notre imagination et découvrir des mondes imaginaires uniques.</h3>
+
+  <div class="row">
+    <% @articles.each do |article| %>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <%= image_tag article.image, class: 'card-img-top img-fluid', alt: 'planet picture', style: 'max-height: 200px;' if article.image %>
+          <div class="card-body">
+            <h5 class="card-title"><%= article.title %></h5>
+            <p class="card-text"><%= article.chapo %></p>
+            <%= link_to "En savoir plus", article, class: 'btn btn-secondary' %>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
+
+  <%= link_to "Créer une planète", new_article_path, class: 'btn btn-primary' %>
 </div>
-<%= link_to "Créer une planète", new_article_path %>
