@@ -29,6 +29,75 @@
     </div>
   </div>
 </nav>
+<%= yield %>
+<!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="Sunset Over the City"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="Canyon at Nigh"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
     <%= yield %>
 <div class="container">
   <div class="row">
@@ -36,19 +105,19 @@
       <div class="card">
         <img src="https://cdn.discordapp.com/ephemeral-attachments/1008571165893197845/1080871954556391584/grid_0.webp" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Zephyrion</h5>
           <p class="card-text">Zephyrion est une planète fascinante et unique, située dans un système stellaire lointain. Sa dense atmosphère est principalement composée de gaz à effet de serre, créant des températures moyennes élevées et des tempêtes électriques fréquentes.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="card">
-        <img src="https://cdn.discordapp.com/ephemeral-attachments/1008571165893197845/1080871954556391584/grid_0.webp" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
+        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1080898086085341345/natcat_a_pink_realistic_planet_in_the_cosmos_61ac4b26-c981-4eea-a189-1bc4b69d9daf.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <h5 class="card-title">Néoterra</h5>
+          <p class="card-text">Néoterra est une planète fascinante et intrigante, située à environ 25 années-lumière de la Terre. Avec une atmosphère dense, une température moyenne de surface similaire à celle de la Terre, des continents, des océans et des montagnes, Néoterra semble être une planète idéale pour la vie.</p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
@@ -58,33 +127,25 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card">
-        <img src="https://cdn.discordapp.com/ephemeral-attachments/1008571165893197845/1080871954556391584/grid_0.webp" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
+        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1081128947032535070/natcat_a_green_realistic_planet_in_space_1d8381b1-673b-4b4b-b590-475907472b59.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <h5 class="card-title">Veridium</h5>
+          <p class="card-text">Veridium est une planète unique dans notre galaxie. Bien que petite et inhospitalière en apparence, elle abrite une vie étonnamment variée et des ressources précieuses. Son instabilité géologique et son atmosphère rare font de la colonisation humaine un défi, mais les scientifiques et les explorateurs continuent de s'y intéresser en raison de sa biodiversité fascinante.</p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="card">
-        <img src="https://cdn.discordapp.com/ephemeral-attachments/1008571165893197845/1080871954556391584/grid_0.webp" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
+        <img src="https://cdn.discordapp.com/attachments/1008571165893197845/1081127938688294912/natcat_planet_neptune_in_space_44099dc1-6350-4871-86c8-ff1842a498b6.png" class="card-img-top img-fluid" alt="Chicago Skyscrapers">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <h5 class="card-title">Aquaterra</h5>
+          <p class="card-text">Aquaterra est une planète extraordinaire dans notre galaxie. Elle est recouverte d'un océan mondial qui abrite une vie marine riche et complexe, y compris des formes de vie intelligentes. Bien que la colonisation humaine soit difficile en raison de l'environnement sous-marin, les scientifiques et les explorateurs continuent de s'intéresser à Aquaterra en raison de ses secrets sous-marins inexplorés. </p>
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="container">
-  <footer class="py-3 my-4" class="text-white" style="background-color: #21081a;">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Planètes</a></li>
-    <p class="text-center text-muted text-white">© 2023 HYPERION Benazza, Twyffels</p>
-  </footer>
 </div>
   </body>
 </html>
