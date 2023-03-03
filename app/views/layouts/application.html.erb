@@ -25,10 +25,11 @@
       </ul>
     </div>
   </div>
-  <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet suscipit tortor vitae semper. Donec fermentum leo vel dic
-  tum faucibus. Vestibulum molestie a arcu nec luctus. Sed vehicula nibh ut accumsan pharetra. Vestibulum in neque ut libero porttitor placerat. Nulla molestie congue felis, eget consequat lectus egest
-  as vitae.</h3>
+
 </nav>
+<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet suscipit tortor vitae semper. Donec fermentum leo vel dic
+tum faucibus. Vestibulum molestie a arcu nec luctus. Sed vehicula nibh ut accumsan pharetra. Vestibulum in neque ut libero porttitor placerat. Nulla molestie congue felis, eget consequat lectus egest
+as vitae.</h3>
     <%= yield %>
 <div class="container">
   <div class="row">
@@ -38,7 +39,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Zephyrion est une planète fascinante et unique, située dans un système stellaire lointain. Sa dense atmosphère est principalement composée de gaz à effet de serre, créant des températures moyennes élevées et des tempêtes électriques fréquentes.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <a href="<%= link_to "Voir cette planète", @article %>" class="btn btn-primary">Button</a>
         </div>
       </div>
     </div>
@@ -48,7 +49,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <a href="<%= link_to "Voir cette planète", @article %>" class="btn btn-primary">Button</a>
         </div>
       </div>
     </div>
@@ -62,7 +63,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+          <a href="<%= link_to "Voir cette planète", @article %>" class="btn btn-primary">Button</a>
         </div>
       </div>
     </div>
@@ -78,7 +79,7 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container-fluid">
   <footer class="text-center text-white" style="background-color: #0E0E0E;">
   <div class="container p-4"></div>
   <ul class="nav justify-content-center border-bottom pb-3 mb-3">

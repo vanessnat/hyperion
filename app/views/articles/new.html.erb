@@ -1,9 +1,10 @@
-<h1>New article</h1>
+<h1>Créer une planète</h1>
 
 <%= render "form", article: @article %>
+<%= bootstrap_form_for(@article) do |f| %>
 
 <br>
 
 <div>
-  <%= link_to "Back to articles", articles_path %>
+  <%= link_to "Voir toutes les panètes", articles_path %>
 </div>
