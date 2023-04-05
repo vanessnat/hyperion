@@ -1,2 +1,7 @@
+@import "bootstrap";
 
-@import "bootstrap"
+body {
+  background-image: asset-url('bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
